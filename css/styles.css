@@ -1,0 +1,101 @@
+html,
+body {
+  font-family: Helvetica, Arial, Sans-serif;
+  height: 100%;
+  margin: 0;
+  background: #f2f2f2;
+}
+
+header,
+footer {
+  height: 5%;
+  width: 100%;
+  background: #fafafa;
+  position: fixed;
+  border: 1px solid grey;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+.header,
+.footer {
+  margin: 10px 10px;
+}
+
+.content {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  overflow: auto;
+}
+
+.menu {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+form.search {
+  width: 30%;
+  margin-left: 5%;
+  float: left;
+}
+
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  color: black;
+  border: 1px solid grey;
+  border-right: none;
+  cursor: pointer;
+  background: #f1f1f1;
+  font-size: 17px;
+}
+
+form.search input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  width: 75%;
+  background: #f1f1f1;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form.filterByStatus,
+form.filterByPriority {
+  width: 23%;
+  margin-left: 15px;
+  float: left;
+}
+
+.filter {
+  width: 100%;
+  background: #f1f1f1;
+  padding: 5px;
+  height: 30px;
+  margin-top: 2px;
+  border: 1px solid grey;
+  font-size: 13px;
+}
+
+.createButton button {
+  width: 100%;
+  padding: 5px 30px;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-radius: 9px;
+  background: #f1f1f1;
+  margin-left: 15px;
+}
